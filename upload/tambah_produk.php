@@ -10,7 +10,7 @@ $deskripsi = $_POST['deskripsi'];
 
 // upload file
 $namafile = $_FILES['foto']['name'];
-$path = $_FILES['foto']['tmp_name'];
+$tmp = $_FILES['foto']['tmp_name'];
 
 $folder = "upload/";
 $path = $folder . time(). "_" . $namafile;
